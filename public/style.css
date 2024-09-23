@@ -1,0 +1,140 @@
+:root {
+  --primary-color: #222831;
+  --secondary-color: #393e46;
+  --color-1: #00adb5;
+  --white: #eeeeee;
+  --red: #eb3678;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body {
+  background: var(--primary-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: var(--white);
+  font-style: bold;
+  font-size: 2rem;
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h3 {
+  font-size: 1.5em;
+  color: var(--white);
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.btn-primary {
+  color: var(--white);
+  background: var(--red);
+  outline: none;
+  border: none;
+  padding: 0.8em;
+  border-radius: 10px;
+}
+.btn-group {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+}
+.btn {
+  font-size: 2em;
+  padding: 0.3em 0.5em;
+  border-radius: 25px;
+  background: transparent;
+}
+.btn:has(.fa-microphone) {
+  background: var(--white);
+  color: var(--primary-color);
+  &:hover {
+    opacity: 0.8;
+    /* color: var(--color-1); */
+  }
+}
+.btn:has(.fa-stop) {
+  color: var(--red);
+  border: 1px solid var(--red);
+  &:hover {
+    background: var(--red);
+    color: var(--white);
+  }
+}
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.container {
+  text-align: center;
+
+  .img-box {
+    position: relative;
+    margin: 2rem;
+    img {
+      width: 50%;
+      height: 30vh;
+      border-radius: 15px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      background: conic-gradient(from var(--angle), transparent 70%, var(--red));
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      z-index: -1;
+      padding: 10px;
+      border-radius: 15px;
+      animation: spinner 3s linear infinite;
+    }
+  }
+  .encrypt {
+    margin-top: 2vh;
+    input {
+      height: 2rem;
+      width: 15rem;
+      background: transparent;
+      outline: none;
+      border: 1px solid var(--red);
+      border-radius: 15px;
+      color: var(--white);
+      padding-left: 0.5em;
+    }
+  }
+  .decrypt {
+    margin-top: 2vh;
+    input {
+      height: 2rem;
+      width: 15rem;
+      background: transparent;
+      outline: none;
+      border: 1px solid var(--red);
+      border-radius: 15px;
+      color: var(--white);
+      padding-left: 0.5em;
+    }
+  }
+}
+@keyframes spinner {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}

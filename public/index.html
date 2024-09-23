@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Recorder with Encryption</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Record Audio and Encrypt</h1>
+
+      <div class="img-box">
+        <img src="avatar.jpg" alt="">
+      </div>
+      <audio id="audioPlayer" controls></audio>
+      <!-- Encryption UI -->
+      <div class="encrypt">
+        <h3>Save Encrypted Audio</h3>
+        <input type="password" id="password" placeholder="Enter password" />
+        <button id="saveEncryptedBtn" disabled class="btn-primary">
+          Save Encrypted File
+        </button>
+      </div>
+      <!-- Decryption UI -->
+      <div class="decrypt">
+        <h3>Decrypt and Listen</h3>
+        <input type="file" id="fileInput" />
+        <input
+          type="password"
+          id="decryptPassword"
+          placeholder="Enter password"
+        />
+        <button id="decryptBtn" class="btn-primary">Decrypt and Play</button>
+      </div>
+      <!-- Record & Playback -->
+      <div class="btn-group">
+        <button id="recordBtn" class="btn">
+          <i class="fa-solid fa-microphone"></i>
+        </button>
+        <button id="stopBtn" disabled class="btn">
+          <i class="fa-solid fa-stop"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
