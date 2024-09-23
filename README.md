@@ -1,14 +1,13 @@
 # 🎙️ Audio Recorder with Encryption 🔐
 
 ## Overview
-This web application allows users to **record audio**, **encrypt** it using a password, and **save** it securely. It also enables users to **decrypt** and listen to their encrypted audio files later. The app provides an intuitive user interface with modern design and utilizes **Wavesurfer.js** to visualize the audio recordings.
+This web application allows users to **record audio**, **encrypt** it using a password, and **save** it securely. It also enables users to **decrypt** and listen to their encrypted audio files later. The app provides an intuitive user interface with modern design.
 
 ## Key Features
 - 🎤 **Record Audio**: Capture high-quality audio using your device's microphone.
 - 🔒 **Encrypt Audio**: Securely encrypt recorded audio with a user-defined password.
 - 🛡️ **Password Protection**: Ensure that only users with the correct password can decrypt and listen to the audio.
 - 📂 **File Save & Load**: Save the encrypted audio file locally and load it for future use.
-- 🎧 **Playback with Wavesurfer.js**: Visualize and play audio with an interactive waveform display.
 - 🧩 **Tab-Based Navigation**: Toggle between **Encrypt** and **Decrypt** sections seamlessly using tabs.
 
 ## Technologies Used
@@ -21,7 +20,6 @@ This web application allows users to **record audio**, **encrypt** it using a pa
 
 ### Prerequisites
 - A web browser that supports microphone input (Chrome, Firefox, etc.)
-- An active internet connection for loading external libraries.
 
 ### Installation
 1. **Clone the repository**:
@@ -39,7 +37,7 @@ This web application allows users to **record audio**, **encrypt** it using a pa
    npm install
    node server.js
    ```
-
+4. **Go to ``` https://localhost:3000 ``` and mess around.**
 ## Usage
 ### 1. Recording Audio
 - Click the **microphone icon** to start recording.
