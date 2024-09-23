@@ -60,7 +60,7 @@ This web application allows users to **record audio**, **encrypt** it using a pa
 
 ## Screenshots
 ### Main Interface
-![Main Interface](https://i.ibb.co/xGtsnJ7/Screenshot-23-9-2024-20459-127-0-0-1.jpg)
+<img src="https://i.ibb.co/xGtsnJ7/Screenshot-23-9-2024-20459-127-0-0-1.jpg" alt="Main Interface">
 
 ## Future Enhancements
 - 🎛 **Audio Filters**: Add options for noise reduction or audio enhancement.
