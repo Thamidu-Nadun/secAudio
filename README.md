@@ -1,7 +1,3 @@
-Here's an attractive and professional README for your audio recording and encryption project:
-
----
-
 # 🎙️ Audio Recorder with Encryption 🔐
 
 ## Overview
